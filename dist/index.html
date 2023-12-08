@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!--Desktop Navbar Start -->
+    <!-- <Section class="hidden lg:flex navbar shadow-2xl">
+        <div class="container mx-auto pt-4 pb-4 lg:pl-10 lg:pr-10 flex flex-row justify-between items-center">
+            <div class="items-center">
+                <img src="images/eBLOOD.jpeg" alt="LOGO" width="100px">
+            </div>
+            <div class="flex flex-row items-center">
+                <div class="mr-6">
+                    <a href="#home" class="nav-links font-semibold pb-1">Home</a>
+                </div>
+                <div class="mr-6">
+                    <a href="#blood" class="nav-links font-semibold pb-1">Blood</a>
+                </div>
+                <div class="mr-6">
+                    <a href="#article" class="nav-links font-semibold pb-1">Article</a>
+                </div>
+                <div class="mr-6">
+                    <a href="#event" class="nav-links font-semibold pb-1">Event</a>
+                </div>
+                <div class="mr-6">
+                    <a href="#request" class="nav-links font-semibold pb-1">Request</a>
+                </div>
+                <div class="">
+                    <a href="#about" class="nav-links font-semibold pb-1">About</a>
+                </div>
+            </div>
+            <div class="items-center">
+                <button class="nav-btn p-2 shadow-md text-white transition-shadow duration-300 hover:shadow-2xl focus:ring-red-950">Register Now</button>
+            </div>
+        </div>
+    </Section> -->
+    <!--Desktop Navbar Ends -->
+
+    <header class="navbar z-50 shadow-2xl pt-1 pb-1 md:pt-3 md:pb-3 px-6 lg:px-8">
+        <div class="logo">
+            <img src="images/eBLOOD.jpeg" alt="" width="100px">
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav class="flex flex-col md:flex h-screen md:h-auto">
+            <ul class="text-center">
+                <li class="mr-4 md:mr-6 pt-4 pb-4 md:pt-0 md:pb-0">
+                    <a href="#home" class="nav-links font-semibold pb-1 text-3xl sm:text-lg md:text-lg">Home</a>
+                </li>
+                <li class="mr-4 md:mr-6 pt-4 pb-4 md:pt-0 md:pb-0">
+                    <a href="#blood" class="nav-links font-semibold pb-1 text-3xl sm:text-lg md:text-lg">Blood</a>
+                </li>
+                <li class="mr-4 md:mr-6 pt-4 pb-4 md:pt-0 md:pb-0">
+                    <a href="#articles" class="nav-links font-semibold pb-1 text-3xl sm:text-lg md:text-lg">Articles</a>
+                </li>
+                <li class="mr-4 md:mr-6 pt-4 pb-4 md:pt-0 md:pb-0">
+                    <a href="#events" class="nav-links font-semibold pb-1 text-3xl sm:text-lg md:text-lg">Events</a>
+                </li>
+                <li class="mr-4 md:mr-6 pt-4 pb-4 md:pt-0 md:pb-0">
+                    <a href="#about" class="nav-links font-semibold pb-1 text-3xl sm:text-lg md:text-lg">About</a>
+                </li>
+                <li>
+                    <hr class="block md:hidden">
+                </li>
+            </ul>
+            <ul class="flex flex-row md:hidden justify-center mt-6 mb-6">
+                <li class="mr-2">
+                    <a href="https://instagram.com/friends_for_seva?igshid=YTQwZjQ0NmI0OA=="><img
+                            src="images/social media/instagram.png" alt="" width="40px"></a>
+                </li>
+                <li class="mr-2">
+                    <a href="https://youtube.com/@friendsforseva2009?si=-mXts07u1XC8b_0B"><img
+                            src="images/social media/youtube.png" alt="" width="40px"></a>
+                </li>
+                <li class="mr-2">
+                    <a href=""><img src="images/social media/whatsapp .png" alt="" width="40px"></a>
+                </li>
+            </ul>
+            <hr class="block md:hidden">
+        </nav>
+        <div class="items-center hidden md:block">
+            <button
+                class="p-1 md:p-2 shadow-md text-white transition-shadow duration-300 hover:shadow-2xl blood-bg1 rounded-md focus:ring-red-700">Register
+                Now</button>
+        </div>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
+
+    <!-- Home Starts -->
+    <section id="home">
+        <div class="blood-home-bg">
+            <div class="mx-auto max-w-7xl py-10">
+                <div
+                    class="relative isolate overflow-hidden px-6 pt-16 sm:px-24 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+
+                    <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Every year Only <br>1%<span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8F1C] via-[#fff]  to-[#509E2F] font-black text-4xl">
+                                INDIANS </span> Donate Blood.</h2>
+                        <p class="mt-6 text-lg leading-8 text-gray-300">That's Why 12,000 LIVES are lost every day to
+                            Blood Shortage.</p>
+                        <div
+                            class="mt-10 flex flex-col md:flex-row items-center justify-center gap-x-6 lg:justify-start">
+                            <a href="#"
+                                class="rounded-md bg-white px-3.5 py-2.5 text-base font-semibold text-gray-900 shadow-sm hover:bg-red-600 hover:text-white hover:shadow-lg transition duration-500 ease-in-out transform focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Donate
+                                Blood</a>
+                            <a href="#"
+                                class="text-base mt-4 md:mt-0 font-semibold leading-6 text-gray-100 hover:text-white flex flex-row items-center transition duration-500 ease-in-out transform"><span
+                                    class="mr-1">Request for Blood</span><svg width="16px" height="20px"
+                                    viewBox="0 -6.5 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor"
+                                    stroke="currentColor">
+
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                                    <g id="SVGRepo_iconCarrier">
+                                        <title>right-arrow</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="ui-gambling-website-lined-icnos-casinoshunter"
+                                                transform="translate(-1511.000000, -158.000000)" fill="currentColor"
+                                                fill-rule="nonzero">
+                                                <g id="1" transform="translate(1350.000000, 120.000000)">
+                                                    <path
+                                                        d="M187.812138,38.5802109 L198.325224,49.0042713 L198.41312,49.0858421 C198.764883,49.4346574 198.96954,49.8946897 199,50.4382227 L198.998248,50.6209428 C198.97273,51.0514917 198.80819,51.4628128 198.48394,51.8313977 L198.36126,51.9580208 L187.812138,62.4197891 C187.031988,63.1934036 185.770571,63.1934036 184.990421,62.4197891 C184.205605,61.6415481 184.205605,60.3762573 184.990358,59.5980789 L192.274264,52.3739093 L162.99947,52.3746291 C161.897068,52.3746291 161,51.4850764 161,50.3835318 C161,49.2819872 161.897068,48.3924345 162.999445,48.3924345 L192.039203,48.3917152 L184.990421,41.4019837 C184.205605,40.6237427 184.205605,39.3584519 184.990421,38.5802109 C185.770571,37.8065964 187.031988,37.8065964 187.812138,38.5802109 Z"
+                                                        id="right-arrow"> </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+
+                                </svg></a>
+                        </div>
+
+                    </div>
+                    <div class="flex items-center lg:mt-8">
+                        <img class="text-center" src="images/blood-home-img.png" alt="Donate Blood">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Home Ends -->
+
+
+    <!-- Blood Start -->
+    <Section id="blood">
+        <div class="bg-white py-14 sm:py-20">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Blood</h2>
+                </div>
+                <div
+                    class="bg-white mx-auto mt-4 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-4 lg:mx-0 lg:flex lg:max-w-none">
+                    <div class="p-8 sm:p-10 lg:flex-auto">
+                        <h3 class="text-2xl font-bold tracking-tight text-gray-900">Understanding Blood: Your Lifesaving
+                            Gift</h3>
+                        <p class="mt-6 text-base leading-7 text-gray-600">Every drop of blood you donate can save lives.
+                            Whether it's for accident victims, patients undergoing surgery, or individuals with medical
+                            conditions, your donation makes a significant impact.</p>
+                        <div class="mt-10 flex items-center gap-x-4">
+                            <h4 class="flex-none text-sm font-semibold leading-6 text-1">Types of Donations</h4>
+                            <div class="h-px flex-auto bg-gray-100"></div>
+                        </div>
+                        <ul role="list"
+                            class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-6 flex-none rounded-full bg-red-100 text-red-950 p-1"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Whole Blood Donation
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-6 flex-none rounded-full bg-red-100 text-red-950 p-1"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Platelet Donation
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-6 flex-none rounded-full bg-red-100 text-red-950 p-1"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Plasma Donation
+                            </li>
+                            <li class="flex gap-x-3">
+                                <svg class="h-6 w-6 flex-none rounded-full bg-red-100 text-red-950 p-1"
+                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Double Red Cell Donation
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-sm">
+                        <div class="rounded-2xl blood-bg">
+                            <div class="rounded-2xl">
+                                <video class="rounded-2xl hidden lg:block" autoplay loop muted>
+                                    <source src="images/videos/blood-video-desk.mp4" type="video/mp4">
+                                </video>
+                                <video class="rounded-2xl lg:hidden" autoplay loop muted>
+                                    <source src="images/videos/blood-video-mob.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <!-- Blood Ends -->
+
+    <!-- Partners Start-->
+
+    <section id="partners">
+        <div class="bg-white py-10 sm:py-20">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Our Partners</h2>
+                <div
+                    class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-7 md:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                    <div class="col-span-2 object-contain lg:col-span-1 mx-auto">
+                        <img src="images/partners/restaurant-partner.PNG" alt="Ruthuvu" width="180" height="60">
+                        <p class="mt-2 text-2 text-center lg:w-1/2 mx-auto">Restaurant Partner</p>
+                    </div>
+                    <div class="col-span-2 object-contain lg:col-span-1 mx-auto">
+                        <img src="images/partners/Clothes-partner.jpeg" alt="Sravan Dental Clinic" width="180"
+                            height="0">
+                        <p class="mt-2 text-2 text-center lg:w-1/2 mx-auto">Clothing Partner</p>
+                    </div>
+                    <div class="col-span-2 object-contain lg:col-span-1 mx-auto">
+                        <img src="images/partners/Dental-partner.jpeg" alt="Tuple" width="158" height="48">
+                        <p class="mt-2 text-2 text-center lg:w-1/2 mx-auto">Health Partner</p>
+                    </div>
+                    <div class="col-span-2 md:col-start-2 object-contain lg:col-span-1 mx-auto">
+                        <img src="images/partners/pizza-partner.jpeg" alt="SavvyCal" width="158" height="48">
+                        <p class="mt-2 text-2 text-center lg:w-1/2 mx-auto">Pizza Partner</p>
+                    </div>
+                    <div class="col-span-2 col-start-2 md:col-span-2 object-contain lg:col-span-1 mx-auto">
+                        <img src="images/partners/SCN.PNG" alt="Statamic" width="158" height="48">
+                        <p class="mt-2  text-2 text-center lg:w-1/2 mx-auto">Media Partner</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Ends -->
+
+    <!-- Articles Start -->
+
+    <section id="articles">
+        <div class="bg-white py-14 sm:py-24">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto lg:mx-0">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Articles</h2>
+                    <p class="mt-2 text-lg leading-8 text-2 text-center lg:w-1/2 mx-auto">Make a difference with us! Our
+                        organization conducts blood donation events to assist patients in emergency need of blood</p>
+                </div>
+                <div class="wrapper mx-auto mt-6 border-t border-gray-200 pt-6 sm:pt-10">
+                    <i id="left" class="fa-solid fa-angle-left text-white"></i>
+                    <ul class="carousel">
+                        <li class="card blood-bg">
+                            <a href="https://youtu.be/nCD2RG5udTg?si=HoucbBThxYfChMHi">
+                                <article
+                                    class="flex max-w-xl flex-col items-start justify-between border rounded-lg p-4">
+                                    <div>
+                                        <img src="images/Phani-&-vishnu-Blood-Donation.jpeg" alt="" class="rounded-lg">
+                                    </div>
+                                    <div class="flex items-center gap-x-4 text-xs mt-4">
+                                        <span class="text-gray-500 text-base md:text-xs">Aug 17, 2016</span>
+                                        <a
+                                            class="rounded-full blood-bg1 px-3 py-1.5 md:font-semibold text-base md:text-xs text-white">Blood
+                                            Donation</a>
+                                    </div>
+                                    <div class="group relative">
+                                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900">
+                                            <a>
+                                                <span class="absolute inset-0"></span>
+                                                Phaneendra & Vishnu Gayathri
+                                            </a>
+                                        </h3>
+                                        <p class="mt-4 line-clamp-3 text-base md:text-sm leading-6 text-gray-600">
+                                            "This couple organized a blood donation camp on their wedding day, and they
+                                            actively participated by donating blood as well."</p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="card blood-bg">
+                            <a href="https://youtu.be/yALlhoC-GOM?si=MkttKJNBROFxJ80g">
+                                <article
+                                    class="flex max-w-xl flex-col items-start justify-between border rounded-lg p-4">
+                                    <div>
+                                        <img src="images/phani-service.jpeg" alt="" class="rounded-lg">
+                                    </div>
+                                    <div class="flex items-center gap-x-4 text-xs mt-4">
+                                        <span class="text-gray-500 text-base md:text-xs">Dec 07, 2014</span>
+                                        <a
+                                            class="rounded-full blood-bg1 px-3 py-1.5 md:font-semibold text-base md:text-xs text-white">FFS
+                                            Activities
+                                        </a>
+                                    </div>
+                                    <div class="group relative">
+                                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900">
+                                            <a>
+                                                <span class="absolute inset-0"></span>
+                                                Friends For Seva Society Members
+                                            </a>
+                                        </h3>
+                                        <p class="mt-4 line-clamp-3 text-base md:text-sm leading-6 text-gray-600">
+                                            "This couple organized a blood donation camp on their wedding day, and they
+                                            actively participated by donating blood as well."</p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="card blood-bg">
+                            <a href="https://youtu.be/LWI4Pa3jLZQ?si=LjMx3JF2BWSyessO">
+                                <article
+                                    class="flex max-w-xl flex-col items-start justify-between border rounded-lg p-4">
+                                    <div>
+                                        <img src="images/phani-frnds-service.jpeg" alt="" class="rounded-lg">
+                                    </div>
+                                    <div class="flex items-center gap-x-4 text-xs mt-4">
+                                        <span class="text-gray-500 text-base md:text-xs">Sep 27, 2013</span>
+                                        <a
+                                            class="rounded-full blood-bg1 px-3 py-1.5 md:font-semibold text-base md:text-xs text-white">FFS
+                                            Activities
+                                        </a>
+                                    </div>
+                                    <div class="group relative">
+                                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900">
+                                            <a>
+                                                <span class="absolute inset-0"></span>
+                                                Friends For Seva Society Members
+                                            </a>
+                                        </h3>
+                                        <p class="mt-4 line-clamp-3 text-base md:text-sm leading-6 text-gray-600">
+                                            "This couple organized a blood donation camp on their wedding day, and they
+                                            actively participated by donating blood as well."</p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="card blood-bg">
+                            <a href="https://youtu.be/GlOElB-GA0w?si=2lkjCPyT0JTwv3dy">
+                                <article
+                                    class="flex max-w-xl flex-col items-start justify-between border rounded-lg p-4">
+                                    <div>
+                                        <img src="images/S&B-blood-donation.jpeg" alt="" class="rounded-lg">
+                                    </div>
+                                    <div class="flex items-center gap-x-4 text-xs mt-4">
+                                        <span class="text-gray-500 text-base md:text-xs">Feb 17, 2023</span>
+                                        <a
+                                            class="rounded-full blood-bg1 px-3 py-1.5 md:font-semibold text-base md:text-xs text-white">Blood
+                                            Donation</a>
+                                    </div>
+                                    <div class="group relative">
+                                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900">
+                                            <a>
+                                                <span class="absolute inset-0"></span>
+                                                Surya Teja & Bhavya
+                                            </a>
+                                        </h3>
+                                        <p class="mt-4 line-clamp-3 text-base md:text-sm leading-6 text-gray-600">
+                                            "This couple inspired by Raguru Phaneendra and organized a blood donation
+                                            camp on their wedding day, and they
+                                            actively participated by donating blood as well."</p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="card blood-bg">
+                            <a href="https://youtu.be/LWI4Pa3jLZQ?si=LjMx3JF2BWSyessO">
+                                <article
+                                    class="flex max-w-xl flex-col items-start justify-between border rounded-lg p-4">
+                                    <div>
+                                        <img src="images/Phani-&-vishnu-Blood-Donation.jpeg" alt="" class="rounded-lg">
+                                    </div>
+                                    <div class="flex items-center gap-x-4 text-xs mt-4">
+                                        <span class="text-gray-500 text-base md:text-xs">Aug 17, 2016</span>
+                                        <a
+                                            class="rounded-full blood-bg1 px-3 py-1.5 md:font-semibold text-base md:text-xs text-white">Blood
+                                            Donation</a>
+                                    </div>
+                                    <div class="group relative">
+                                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900">
+                                            <a>
+                                                <span class="absolute inset-0"></span>
+                                                Phaneendra & Vishnu Gayathri
+                                            </a>
+                                        </h3>
+                                        <p class="mt-4 line-clamp-3 text-base md:text-sm leading-6 text-gray-600">
+                                            "This couple organized a blood donation camp on their wedding day, and they
+                                            actively participated by donating blood as well."</p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="card blood-bg">
+                            <a href="https://youtu.be/LWI4Pa3jLZQ?si=LjMx3JF2BWSyessO">
+                                <article
+                                    class="flex max-w-xl flex-col items-start justify-between border rounded-lg p-4">
+                                    <div>
+                                        <img src="images/Phani-&-vishnu-Blood-Donation.jpeg" alt="" class="rounded-lg">
+                                    </div>
+                                    <div class="flex items-center gap-x-4 text-xs mt-4">
+                                        <span class="text-gray-500 text-base md:text-xs">Aug 17, 2016</span>
+                                        <a
+                                            class="rounded-full blood-bg1 px-3 py-1.5 md:font-semibold text-base md:text-xs text-white">Blood
+                                            Donation</a>
+                                    </div>
+                                    <div class="group relative">
+                                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900">
+                                            <a>
+                                                <span class="absolute inset-0"></span>
+                                                Phaneendra & Vishnu Gayathri
+                                            </a>
+                                        </h3>
+                                        <p class="mt-4 line-clamp-3 text-base md:text-sm leading-6 text-gray-600">
+                                            "This couple organized a blood donation camp on their wedding day, and they
+                                            actively participated by donating blood as well."</p>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                    </ul>
+                    <i id="right" class="fa-solid fa-angle-right text-white"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Ends -->
+
+    <!-- About Starts -->
+
+    <section id="about">
+        <div class="bg-white py-14 sm:py-20">
+            <div class="mx-auto px-6 lg:px-8">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Meet our FFS Society
+                    Members</h2>
+                <div class="mt-16 flex flex-col justify-center items-center mx-auto">
+                    <div class="mx-auto grid gap-x-8 gap-y-20 items-center xl:grid-cols-1">
+                        <ul role="list"
+                            class="mx-auto items-center grid lg:hidden gap-x-8 gap-y-12 md:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                            <li class="grid grid-cols-1">
+                                <div class="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left lg:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Phaneendra Raguru</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Founder / President
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1">
+                                <div class="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left lg:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Anand
+                                            Kumar Sri Khande</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">General Secretary</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1">
+                                <div class="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left lg:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Bapuji Naik Dumavathi</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Hon. President</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1">
+                                <div class="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left lg:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Surya
+                                            Teja Chinni</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Treasurer</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1">
+                                <div class="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left lg:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Sailaja Madisetty</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Vice President
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1">
+                                <div class="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left lg:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Devi Bhramarambha</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Joint Secretary</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1">
+                                <div class="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left lg:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Pradeep Kopparapu</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Member</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1">
+                                <div class="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left lg:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Dileep Tanakala</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Member</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1">
+                                <div class="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left lg:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Yaswanth Raguru</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Member</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1">
+                                <div class="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left lg:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Raj Kumar Madisetty</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Member / Leagal Adv</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul role="list"
+                            class="mx-auto items-center justify-center hidden lg:grid gap-x-8 gap-y-12 sm:grid-cols-6 md:grid-cols-4 lg:grid-cols-3 sm:gap-y-16 xl:col-span-2">
+                            <li class="grid grid-cols-1 justify-center">
+                                <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left md:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Phaneendra Raguru</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Founder / President
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1 justify-center">
+                                <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left md:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Anand
+                                            Kumar Sri Khande</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">General Secretary</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1 justify-center">
+                                <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left md:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Bapuji Naik Dumavathi</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Hon. President</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul role="list"
+                            class="mx-auto items-center justify-center hidden lg:grid gap-x-8 gap-y-12 sm:grid-cols-6 md:grid-cols-4 lg:grid-cols-5 sm:gap-y-16 xl:col-span-2">
+                            <li class="grid grid-cols-1 justify-center">
+                                <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left md:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Surya Teja Chinni</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Treasurer
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1 justify-center">
+                                <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left md:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Sailaja Madisetty</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Vice President</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1 justify-center">
+                                <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left md:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Devi Bhramarambha</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Joint Secretary</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1 justify-center">
+                                <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left md:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Pradeep Kopparapu</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Member</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1 justify-center">
+                                <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left md:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Dileep Tanakala</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Member</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul role="list"
+                            class="mx-auto items-center justify-center hidden lg:grid gap-x-8 gap-y-12 sm:grid-cols-6 md:grid-cols-2 lg:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                            <li class="grid grid-cols-1 justify-center">
+                                <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left md:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Yaswanth Raguru</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Member
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid grid-cols-1 justify-center">
+                                <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+                                    <img class="h-16 w-16 rounded-full"
+                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <div class="text-left md:text-center">
+                                        <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                                            Raj Kumar Madisetty</h3>
+                                        <p class="text-sm font-semibold leading-6 text-1">Member / Legal Adv</p>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Ends -->
+
+    <!-- Footer Starts -->
+    
+
+<div class="relative isolate overflow-hidden blood-footer-bg py-16 sm:py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+        <div class="max-w-xl lg:max-w-lg">
+            <img src="images/eblood-logo.png" alt="" width="200px">
+          <p class="mt-4 text-lg leading-8 text-white">Donating blood not only saves lives but also has the potential to impact various medical treatments.</p>
+          <div class="mt-6 flex max-w-md gap-x-4">
+            <label for="email-address" class="sr-only">Email address</label>
+            <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0  px-3.5 py-2 text-white shadow-sm sm:text-sm sm:leading-6" placeholder="Enter your email">
+            <button type="submit" class="flex-none rounded-md bg-gray-50 px-3.5 py-2.5 text-sm font-bold text-gray-900 shadow-sm hover:bg-white hover:text-red-700 transition duration-300 transform focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-700">Join Us</button>
+          </div>
+        </div>
+        <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+          <div class="flex flex-col items-start">
+            <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+              </svg>
+            </div>
+            <dt class="mt-4 font-semibold text-white">Weekly articles</dt>
+            <dd class="mt-2 leading-7 text-gray-400">Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.</dd>
+          </div>
+          <div class="flex flex-col items-start">
+            <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
+              </svg>
+            </div>
+            <dt class="mt-4 font-semibold text-white">No spam</dt>
+            <dd class="mt-2 leading-7 text-gray-400">Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    
+  </div>
+  
+
+    <!-- Footer Ends -->
+
+    <!-- Popup Block Starts-->
+
+    <div id="dismissBlock"
+        class="relative flex items-center gap-x-6 overflow-hidden px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <p class="text-sm leading-6 text-gray-900">
+                <strong class="font-semibold">Friends For Seva</strong><svg viewBox="0 0 2 2"
+                    class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
+                    <circle cx="1" cy="1" r="1" />
+                </svg>Join us On Dec 10th Blood Donation Camp and Save A Life.
+            </p>
+            <a href="#"
+                class="flex-none rounded-full blood-bg1 px-3.5 py-1 text-sm font-medium text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register
+                now <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="flex flex-1 justify-end">
+            <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]" onclick="dismissClose()">
+                <span class="sr-only">Dismiss</span>
+                <svg class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Popup Block Ends -->
+
+    <script src="eblood.js"></script>
+</body>
+
+</html>
