@@ -91,6 +91,34 @@ wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
 
+// Hunger Free
+function updateCounts() {
+    // Retrieve counts from local storage or initialize to 0
+    let count1 = parseInt(localStorage.getItem('count1')) || 0;
+    let count2 = parseInt(localStorage.getItem('count2')) || 0;
+
+    // Update counts
+    count1 += 1;
+    count2 += 250;
+
+    // Update HTML
+    document.getElementById('count1').textContent = `${count1} Days`;
+    document.getElementById('count2').textContent = `${count2}`;
+
+    // Store counts in local storage
+    localStorage.setItem('count1', count1);
+    localStorage.setItem('count2', count2);
+  }
+
+   // Check if counts are already in local storage before updating
+   if (!localStorage.getItem('count1') || !localStorage.getItem('count2')) {
+    // Initial update only if counts are not present in local storage
+    updateCounts();
+  }
+
+  // Set interval to update counts every 24 hours (in milliseconds)
+  setInterval(updateCounts, 24 * 60 * 60 * 1000);
+
 // Dismiss Block
 
 let dismissBlock = document.getElementById('dismissBlock');
@@ -98,3 +126,4 @@ let dismissBlock = document.getElementById('dismissBlock');
 function dismissClose() {
     dismissBlock.style.display = "none";
 }
+
