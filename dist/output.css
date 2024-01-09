@@ -1719,6 +1719,10 @@ video {
     gap: 1rem;
   }
 
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .md\:p-2 {
     padding: 0.5rem;
   }
