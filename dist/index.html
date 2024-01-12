@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <title>Document</title>
+    <title>eBLOOD</title>
+    <link rel="icon" href="images/eblood-favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="output.css">
     <!-- Font Family -->
@@ -23,9 +24,9 @@
 
     <!-- Navbar Starts -->
 
-    <header class="navbar z-50 shadow-2xl pt-1 pb-1 md:pt-3 md:pb-3 px-6 lg:px-8">
+    <header class="navbar z-50 shadow-2xl pt-2 pb-2 md:pt-3 md:pb-3 px-6 lg:px-8">
         <div class="logo">
-            <img src="images/eBLOOD.jpeg" alt="" width="100px">
+            <a href="../dist/index.html"><img src="images/eBLOOD.jpeg" alt="eBLOOD" width="100px"></a>
         </div>
         <input type="checkbox" id="nav_check" hidden>
         <nav class="flex flex-col md:flex h-screen md:h-auto">
@@ -66,9 +67,9 @@
             <hr class="block md:hidden">
         </nav>
         <div class="items-center hidden md:block">
-            <button
+            <a href="https://forms.gle/znbNpEoYtg3SuyMD7"
                 class="p-1 md:p-2 shadow-md text-white transition-shadow duration-300 hover:shadow-2xl blood-bg1 rounded-md focus:ring-red-700">Register
-                Now</button>
+                Now</a>
         </div>
         <label for="nav_check" class="hamburger">
             <div></div>
@@ -80,6 +81,7 @@
     <!-- Navbar Ends -->
 
     <!-- Home Starts -->
+
     <section id="home">
         <div class="blood-home-bg">
             <div class="mx-auto max-w-7xl py-10">
@@ -94,11 +96,11 @@
                             Blood Shortage.</p>
                         <div
                             class="mt-10 flex flex-col md:flex-row items-center justify-center gap-x-6 lg:justify-start">
-                            <a href="#"
+                            <a href="request.html"
                                 class="rounded-md bg-white px-3.5 py-2.5 text-base font-semibold text-gray-900 shadow-sm hover:bg-red-600 hover:text-white hover:shadow-lg transition duration-500 ease-in-out transform focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Request
                                 for
                                 Blood</a>
-                            <a href="#"
+                            <a href="https://forms.gle/znbNpEoYtg3SuyMD7"
                                 class="text-base mt-4 md:mt-0 font-semibold leading-6 text-gray-100 hover:text-white flex flex-row items-center transition duration-500 ease-in-out transform"><span
                                     class="mr-1">Donate Blood</span><svg width="16px" height="20px"
                                     viewBox="0 -6.5 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -137,10 +139,12 @@
         </div>
 
     </section>
+
     <!-- Home Ends -->
 
 
     <!-- Blood Start -->
+
     <Section id="blood">
         <div class="bg-white py-14 sm:py-20">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -203,10 +207,10 @@
                         <div class="rounded-2xl blood-bg">
                             <div class="rounded-2xl">
                                 <video class="rounded-2xl hidden lg:block" autoplay loop muted>
-                                    <source src="images/videos/blood-video-desk.mp4" type="video/mp4">
+                                    <source src="images/videos/blood-video-desk-c.mp4" type="video/mp4">
                                 </video>
                                 <video class="rounded-2xl lg:hidden" autoplay loop muted>
-                                    <source src="images/videos/blood-video-mob.mp4" type="video/mp4">
+                                    <source src="images/videos/blood-video-mob-c.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
@@ -215,6 +219,7 @@
             </div>
         </div>
     </Section>
+
     <!-- Blood Ends -->
 
     <!-- Partners Start-->
@@ -264,7 +269,7 @@
                 Your browser does not support the video tag.
             </video>
             <video class="w-full h-full object-cover lg:hidden" autoplay loop muted>
-                <source src="images/videos/hungermob.mp4" type="video/mp4">
+                <source src="images/videos/hungermob-c.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -529,7 +534,7 @@
                             class="mx-auto items-center grid lg:hidden gap-x-8 gap-y-12 md:grid-cols-2 sm:gap-y-16 xl:col-span-2">
                             <li class="grid grid-cols-1">
                                 <div class="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
-                                    <img class="h-16 w-16 rounded-full" src="images/Members/phaneendra-ffs.jpg" alt="">
+                                    <img class="h-16 w-16 rounded-full" src="images/Members/phaneendra-ffs.png" alt="">
                                     <div class="text-left lg:text-center">
                                         <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
                                             Phaneendra Raguru</h3>
@@ -695,7 +700,7 @@
                             class="mx-auto items-center justify-center hidden lg:grid gap-x-4 gap-y-12 sm:grid-cols-6 md:grid-cols-4 lg:grid-cols-5 sm:gap-y-16 xl:col-span-2">
                             <li class="grid grid-cols-1 justify-center">
                                 <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
-                                    <img class="h-16 w-16 rounded-full" src="images/Members/phaneendra-ffs.jpg" alt="">
+                                    <img class="h-16 w-16 rounded-full" src="images/Members/phaneendra-ffs.png" alt="">
                                     <div class="text-left md:text-center">
                                         <h3 class="text-sm font-semibold leading-7 tracking-tight text-gray-900">
                                             Phaneendra Raguru</h3>
@@ -1009,7 +1014,7 @@
                         </p>
                     </div>
                     <div class="mb-4 md:w-1/2 lg:w-1/3">
-                        <a href="#"
+                        <a href="https://forms.gle/znbNpEoYtg3SuyMD7"
                             class="rounded-md items-center flex flex-row justify-center bg-gray-400 px-3 py-2.5 text-base font-semibold text-gray-900 shadow-sm hover:text-red-600 hover:shadow-lg transition duration-500 ease-in-out transform focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Register
                             Now <svg width="16px" height="20px" class="ml-2" viewBox="0 -6.5 38 38" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1044,16 +1049,13 @@
                         <h2 class="mb-6 text-sm font-semibold text-gray-400 underline uppercase">Services</h2>
                         <ul class="text-white font-medium">
                             <li class="mb-4">
-                                <a href="https://flowbite.com/" class="hover:underline">Blood Donation</a>
+                                <a class="hover:underline">Blood Donation</a>
                             </li>
                             <li class="mb-4">
-                                <a href="https://tailwindcss.com/" class="hover:underline">Food Donation</a>
+                                <a class="hover:underline">Food Donation</a>
                             </li>
                             <li class="mb-4">
-                                <a href="https://flowbite.com/" class="hover:underline">Study Donation</a>
-                            </li>
-                            <li>
-                                <a href="https://tailwindcss.com/" class="hover:underline"></a>
+                                <a class="hover:underline">Study Donation</a>
                             </li>
                         </ul>
                     </div>
@@ -1072,7 +1074,7 @@
                                 <a href="https://www.facebook.com/FriendsForSeva" class="hover:underline ">Facebook</a>
                             </li>
                             <li class="mb-4">
-                                <a href="#" class="hover:underline">WhatsApp</a>
+                                <a href="https://chat.whatsapp.com/EhrdPgUBx7rGgooRKRCNdW" class="hover:underline">WhatsApp</a>
                             </li>
                             <li>
                                 <a href="#" class="hover:underline">Twitter</a>
@@ -1083,10 +1085,10 @@
                         <h2 class="mb-6 text-sm font-semibold uppercase text-gray-400 underline">Legal</h2>
                         <ul class="text-white font-medium">
                             <li class="mb-4">
-                                <a href="#" class="hover:underline">Privacy Policy</a>
+                                <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                                <a href="terms&conditions.html" class="hover:underline">Terms &amp; Conditions</a>
                             </li>
                         </ul>
                     </div>
@@ -1170,9 +1172,9 @@
                 <strong class="font-semibold">Friends For Seva</strong><svg viewBox="0 0 2 2"
                     class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
                     <circle cx="1" cy="1" r="1" />
-                </svg>Join us On Dec 10th Blood Donation Camp and Save A Life.
+                </svg>Join us On Jan 14th Blood Donation Camp and Save A Life.
             </p>
-            <a href="#"
+            <a href="https://forms.gle/znbNpEoYtg3SuyMD7"
                 class="flex-none rounded-full blood-bg1 px-3.5 py-1 text-sm font-medium text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register
                 now <span aria-hidden="true">&rarr;</span></a>
         </div>
